@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Long URL? Cut it!</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- <base href="https://cuturl.it/" /> -->
+    
+    <!-- END MAIN SITE TAGS -->
+    <!-- START THE META TAGS -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="theme-color" content="#424242">
+
+    <link rel="manifest" href="./manifest.json" />
+    <!-- END META TAGS -->
+    <!-- START SHARING TAGS -->
+    <meta name="author" content="aljaxus">
+    <meta name="description" content="The simple, flexible and free to use URL shortner">
+    <meta property="og:site_name" content="cuturl.it">
+    <meta property="og:url" content="https://cuturl.it/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="cuturl.it">
+    <meta property="og:image" content="/img/icons/apple-touch-icon.png">
+    
+    <meta name="twitter:url" content="https://cuturl.it/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="cuturl.it">
+    <meta name="twitter:image" content="/img/icons/apple-touch-icon.png">
+    <!-- END SHARING TAGS -->
+    <!-- START PRELODER -->
+    <style media="all">
+      body{transition:opacity.6s;background-color:#222222!important;}
+      body:not(.loaded){opacity:0!important;overflow:hidden!important;}
+    </style>
+    <script type="text/javascript">
+      window.onload = function(e){console.log('|_ Preloader - all content is loaded!');document.getElementsByTagName("body")[0].style.opacity = '1';document.getElementsByTagName("body")[0].className += ' loaded';}
+    </script>
+    <!-- END PRELOADER -->
+    <script>if(location.protocol!='https:'&&window.location.hostname!='localhost'){location.href='https:'+window.location.href.substring(window.location.protocol.length)}</script>
+    <!-- START IMPORTING REMOTE LIBRARIES -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <!-- END IMPORTING REMOTE LIBRARIES -->
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but cuturl.it doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <p><br>How to enable Javascript in:<br>
+        <ul>
+          <li><a href="https://support.google.com/adsense/answer/12654?hl=en">Chrome</a></li>
+          <li><a href="https://help.opera.com/en/latest/web-preferences/#javaScript">Opera</a></li>
+          <li><a href="https://support.mozilla.org/en-US/kb/javascript-settings-for-interactive-web-pages">Mozilla firefox</a></li>
+          <li><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-networking/how-to-enable-javascript-in-microsoft-edge/ba12aa2e-6f2f-4d87-a990-5c1d2fd7036c">Microsoft Edge</a></li>
+          <li>Internet explorer -> Please, install and use any other browser listed above. Internet explorer is old, very usecure and we have no plans supporting it.</li>
+        </ul>
+      </p>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

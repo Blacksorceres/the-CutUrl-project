@@ -1,0 +1,98 @@
+/* DISABLE SELECTING TEXT */
+body{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'Sunflower', -apple-system, BlinkMacSystemFont, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.canSelectText {
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+/* DISABLE DRAGGING IMAGES */
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+/* SCROLLBAR SETTINGS */
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}
+
+/* Page scrolling */
+body,
+html {
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	width: 0px;
+}
+
+/* Page background */
+#app {
+  background-color: transparent !important;
+}
+body:before {
+	content: "";
+	position: fixed;
+	left: -50px;
+	right: -50px;
+	top: -50px;
+	bottom: -50px;
+	z-index: -1;
+
+	display: block;
+	background-image: url('./../marcelo-vaz-408595-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 70%;
+	background-attachment: fixed;
+	background-color: #303030;
+
+	width: 140vw;
+	height: 120vh;
+
+  -webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+/* Styling for help dialog */
+.dialog-help-text h2 {
+	margin-top: 28px;
+	padding-left: 0px;
+}
+.dialog-help-text h3 {
+	margin-top: 14px;
+	padding-left: 7px;
+}
+.dialog-help-text h4 {
+	padding-left: 14px;
+}
+.dialog-help-text h5 {
+	padding-left: 21px;
+}
+.dialog-help-text p {
+	padding-left: 28px;
+	margin-bottom: 0;
+}

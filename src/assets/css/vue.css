@@ -1,0 +1,13 @@
+.v-badge--overlap .v-badge__badge {
+	right: -8px;
+	top: -8px;
+}
+.v-badge__badge {
+    height: 18px;
+	width: 18px;
+}
+
+a.v-btn > .v-btn__content > span,
+button.v-btn > .v-btn__content > span {
+    line-height: 1;
+}

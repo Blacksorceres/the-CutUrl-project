@@ -1,0 +1,41 @@
+.spin-constant-30:not(.spin-reverse) { animation: spin-constant 3s infinite; display: flex;}
+.spin-constant-25:not(.spin-reverse) { animation: spin-constant 2.5s infinite; display: flex;}
+.spin-constant-20:not(.spin-reverse) { animation: spin-constant 2s infinite; display: flex;}
+.spin-constant-15:not(.spin-reverse) { animation: spin-constant 1.5s infinite; display: flex;}
+.spin-constant-10:not(.spin-reverse) { animation: spin-constant 1s infinite; display: flex;}
+.spin-constant-05:not(.spin-reverse) { animation: spin-constant .5s infinite; display: flex;}
+@-moz-keyframes 	spin-constant { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes 	spin-constant { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes 			spin-constant { 100% { transform:rotate(360deg); } }
+
+.spin-constant-30.spin-reverse { animation: spin-constant-reverse 3s infinite; display: flex;}
+.spin-constant-25.spin-reverse { animation: spin-constant-reverse 2.5s infinite; display: flex;}
+.spin-constant-20.spin-reverse { animation: spin-constant-reverse 2s infinite; display: flex;}
+.spin-constant-15.spin-reverse { animation: spin-constant-reverse 1.5s infinite; display: flex;}
+.spin-constant-10.spin-reverse { animation: spin-constant-reverse 1s infinite; display: flex;}
+.spin-constant-05.spin-reverse { animation: spin-constant-reverse .5s infinite; display: flex;}
+@-moz-keyframes 	spin-constant-reverse { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes 	spin-constant-reverse { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes 			spin-constant-reverse { 100% { transform:rotate(-360deg); } }
+
+.spin-pulse-30:not(.spin-reverse) { animation: spin-pulse 3s infinite; display: flex; }
+.spin-pulse-25:not(.spin-reverse) { animation: spin-pulse 2.5s infinite; display: flex;}
+.spin-pulse-20:not(.spin-reverse) { animation: spin-pulse 2s infinite; display: flex;}
+.spin-pulse-15:not(.spin-reverse) { animation: spin-pulse 1.5s infinite; display: flex;}
+.spin-pulse-10:not(.spin-reverse) { animation: spin-pulse 1s infinite; display: flex;}
+.spin-pulse-05:not(.spin-reverse) { animation: spin-pulse .5s infinite; display: flex;}
+@-moz-keyframes 	spin-pulse { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+@-webkit-keyframes 	spin-pulse { from { transform: rotate(0); } to {  transform: rotate(360deg); } }
+@-o-keyframes 		spin-pulse { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+@keyframes 			spin-pulse { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+.spin-pulse-30.spin-reverse { animation: spin-pulse-reverse 3s infinite; display: flex; }
+.spin-pulse-25.spin-reverse { animation: spin-pulse-reverse 2.5s infinite; display: flex;}
+.spin-pulse-20.spin-reverse { animation: spin-pulse-reverse 2s infinite; display: flex;}
+.spin-pulse-15.spin-reverse { animation: spin-pulse-reverse 1.5s infinite; display: flex;}
+.spin-pulse-10.spin-reverse { animation: spin-pulse-reverse 1s infinite; display: flex;}
+.spin-pulse-05.spin-reverse { animation: spin-pulse-reverse .5s infinite; display: flex;}
+@-moz-keyframes 	spin-pulse-reverse { from { transform: rotate(0); } to { transform: rotate(-360deg); } }
+@-webkit-keyframes 	spin-pulse-reverse { from { transform: rotate(0); } to {  transform: rotate(-360deg); } }
+@-o-keyframes 		spin-pulse-reverse { from { transform: rotate(0); } to { transform: rotate(-360deg); } }
+@keyframes 			spin-pulse-reverse { from { transform: rotate(0); } to { transform: rotate(-360deg); } }
