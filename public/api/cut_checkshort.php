@@ -4,7 +4,7 @@ require_once __DIR__ . '/_util/_database.php';
 
 $dbUtil 		= new utildbInit;
 $dbManip		= new dbManip;
-$pdo 			= $dbUtil->pdo();
+$pdo 			  = $dbUtil->pdo();
 
 $datArr = [
 	'data' => [
@@ -18,11 +18,7 @@ $datArr = [
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	array_push($datArr['msg'], 'You are using the correct request method');
 	if (!empty($_REQUEST['domain'])) {
-		if (
-			$_REQUEST['domain'] === 'cuturl.it' ||
-			$_REQUEST['domain'] === 'pofuki.me' ||
-			$_REQUEST['domain'] === 'top-pub.eu'
-		) {
+		if (in_array($_REQUEST['domain'], $domains)) {
 			if (!empty($_REQUEST['short'])){
 				array_push($datArr['msg'], 'Custom short code provided');
 				if (strlen($_REQUEST['short'])<=32) {

@@ -7,3 +7,8 @@ class mysqlAuth {
 	protected $dbname = 'database_name';
 
 }
+$domains = array(
+  'top-pub.eu',
+  'pofuki.me',
+  'cuturl.it'
+);

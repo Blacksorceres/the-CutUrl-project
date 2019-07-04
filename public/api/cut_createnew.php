@@ -4,7 +4,7 @@ require_once __DIR__ . '/_util/_database.php';
 
 $dbUtil 		= new utildbInit;
 $dbManip		= new dbManip;
-$pdo 			= $dbUtil->pdo();
+$pdo 			  = $dbUtil->pdo();
 
 $datArr = [
   'check' => [
@@ -159,19 +159,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       *
       */
       if (!empty($_DATA['domain'])) {
-          array_push($datArr['msg'], '-> Domain provided -> '.$_DATA['domain']);
-          if (
-            $_DATA['domain'] === 'cuturl.it' ||
-            $_DATA['domain'] === 'pofuki.me' ||
-            $_DATA['domain'] === 'top-pub.eu' 
-          ) {
-            array_push($datArr['msg'], '-> Domain is correctly provided');
-            $datArr['check']['domain'] = true;
-            $datArr['data']['domain'] = $_DATA['domain'];
-          } else {
-            array_push($datArr['msg'], '/!\ Domain was incorrectly rovided');
-            $datArr['check']['domain'] = false;
-          }
+        array_push($datArr['msg'], '-> Domain provided -> '.$_DATA['domain']);
+        if (in_array($_DATA['domain'], $domains)) {
+          array_push($datArr['msg'], '-> Domain is correctly provided');
+          $datArr['check']['domain'] = true;
+          $datArr['data']['domain'] = $_DATA['domain'];
+        } else {
+          array_push($datArr['msg'], '/!\ Domain was incorrectly rovided');
+          $datArr['check']['domain'] = false;
+        }
       } else {
         array_push($datArr['msg'], '/!\ Domain was not provided');
         $datArr['check']['domain'] = true;
