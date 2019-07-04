@@ -238,7 +238,7 @@
             - is using an inappropriate custom link and redirects to my sodial media / blog / website / etc. <br>
             - any web service that is breaking any law, is harmful, attempts to harm or scam others, etc. <br>
             <br>
-            If you want to report any shortened link, please do contact me at <a href="mailto:aljaxus.dev@gmail.com">aljaxus.dev (at) gmail.com</a>.
+            If you want to report any shortened link, please do contact me at <a href="mailto:me@aljaxus.eu">me@aljaxus.eu</a>.
           </p>
         </v-card-text>
         <v-card-actions>
