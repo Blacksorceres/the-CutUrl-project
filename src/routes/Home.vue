@@ -294,7 +294,7 @@ export default {
       uri_message: '',
       extra_show: [false],
       domain_value: 'cuturl.it',
-      domain_values: ['cuturl.it', 'pofuki.me', 'tnmc.link', 'foxeh.eu'],
+      domain_values: ['cuturl.it', 'pofuki.me', 'top-pub.eu'],
       custom_loading: false,
       custom_value: '',
       custom_message: '',
@@ -467,6 +467,11 @@ export default {
 			this.linkData.short		  = '';
 			this.linkData.ads		    = false;
 		}
-	}
+  },
+  mounted () {
+    if (process.env.NODE_ENV === 'production') {
+      if (!this.domain_values.includes(document.location.hostname)) document.location.href = "https://cuturl.it"
+    }
+  }
 }
 </script>
