@@ -380,7 +380,7 @@ export default {
 		checkCustom: function() {
 			if (this.custom_value != ''){
 				this.custom_loading = true;
-        axios.get('https://cuturl.it/api/cut_checkshort.php', {
+        axios.get('/api/cut_checkshort.php', {
           params: { short: this.custom_value, domain: this.domain_value }
         }).then(response => {
           let dat = response.data;
@@ -419,7 +419,7 @@ export default {
 			this.extra_show = [true];
 
 			setTimeout(()=>{
-				axios.post('https://cuturl.it/api/cut_createnew.php', {
+				axios.post('/api/cut_createnew.php', {
 					original: this.uri_value,
           pwd: this.pwd_value,
           domain: this.domain_value,

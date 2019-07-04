@@ -110,7 +110,7 @@ export default {
 	methods: {
 		loadLinkData () {
 			this.loading = true;
-			axios.post('https://cuturl.it/api/send_getData.php', {
+			axios.post('/api/send_getData.php', {
           short: this.link.short,
           domain: this.getDomain,
 				pwd: this.pwd.pwd
