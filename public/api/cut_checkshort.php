@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		if (
 			$_REQUEST['domain'] === 'cuturl.it' ||
 			$_REQUEST['domain'] === 'pofuki.me' ||
-			$_REQUEST['domain'] === 'tnmc.link' 
+			$_REQUEST['domain'] === 'top-pub.eu'
 		) {
 			if (!empty($_REQUEST['short'])){
 				array_push($datArr['msg'], 'Custom short code provided');
