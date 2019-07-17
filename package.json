@@ -35,8 +35,8 @@
     "vue-template-compiler": "^2.5.22",
     "vuetify-loader": "^1.1.1"
   },
-  "resolutions": { 
-    "eslint-loader": "2.1.2" 
+  "resolutions": {
+    "eslint-loader": "2.1.2"
   },
   "eslintConfig": {
     "root": true,
