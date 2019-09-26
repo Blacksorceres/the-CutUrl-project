@@ -1,0 +1,16 @@
+<body>
+<head>
+  <title>theCutUrl project | Api docs | cuturl.it</title>
+  <script src="./showdown.min.js"></script>
+</head>
+<body id="body"><h2>Loading ...</h2></body>
+<style>body { font-family: monospace, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }</style>
+<script>
+var converter = new showdown.Converter(),
+text = `
+# theCutURL project - official API docs
+`,
+html = converter.makeHtml(text);
+document.getElementById('body').innerHTML = html;
+</script>
+</body>

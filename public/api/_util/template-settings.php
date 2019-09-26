@@ -10,5 +10,6 @@ class mysqlAuth {
 $domains = array(
   'top-pub.eu',
   'pofuki.me',
-  'cuturl.it'
+  'cuturl.it',
+  'mona.si'
 );
